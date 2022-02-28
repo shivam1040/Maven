@@ -1,0 +1,25 @@
+open maven binary directory to run these commands
+
+mvn archetype:generate, this cmd will get all the predefined project creation tempelates for creating project
+
+by default mavn choses maven-archetype-quickstart for creating project
+
+artifact id is name of project, grou id is organization you are wirking fr, package is same as group id
+
+mvn clean, for cleaning project
+d
+in eclipse, one can use maven build... option and give compile as goal and compile source code, compiled file will be in targe directory of project folder. To compile test source code use test-compile in goal
+
+To create a jar file, use install in goal while running maven build... option on the project
+
+mvn clean -> mvn compile ->mvn test-compile is same as last second sentence but in cmd
+
+before creaating jar file in cmd mode, run 'mvn test' to check the testcases if any
+
+mvn install, final step in cmd to create jar file
+
+in maven if we add a dependecy and another dependency gets added alongwith the one we want to add, iis called transsitive dependencies
+
+we can use exclusions tag inside dependency tag to remove any transitive dependency
+
+using scope tag inside dependency in pom xml one can limit the dependency to particular source folder
